@@ -4,10 +4,10 @@ public class Cafe {
     private double gramosDeCafe;
     private double mililitrosDeAgua;
     private String tamaño;
-    public Cafe(double gramosCafe, double mlAgua, String tamaño) {
+    public Cafe(double gramosDeCafe, double mililitrosDeAgua, String tamaño) {
 
-        this.gramosDeCafe = gramosCafe;
-        this.mililitrosDeAgua = mlAgua;
+        this.gramosDeCafe = gramosDeCafe;
+        this.mililitrosDeAgua = mililitrosDeAgua;
         this.tamaño = tamaño;
     }
     public double getGramosDeCafe() {
@@ -35,8 +35,8 @@ public class Cafe {
     }
     public String toString() {
         return "Café{" +
-                "gramosCafe=" + gramosDeCafe +
-                ", mlAgua=" + mililitrosDeAgua +
+                "gramosDeCafe=" + gramosDeCafe +
+                ", mililitrosDeAgua=" + mililitrosDeAgua +
                 ", tamaño='" + tamaño + '\'' +
                 '}';
     }
