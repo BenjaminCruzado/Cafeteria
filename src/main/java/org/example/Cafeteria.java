@@ -7,11 +7,11 @@ public class Cafeteria {
     private String direccion;
     private ArrayList<String> redesSociales;
     private ArrayList<Cafe> listaDeCafes;
-    public Cafeteria(String nombre, String direccion, ArrayList<String> redesSociales, ArrayList<Cafe> listaDeCafes) {
+    public Cafeteria(String nombre, String direccion) {
         this.nombre = nombre;
         this.direccion = direccion;
-        this.redesSociales = redesSociales;
-        this.listaDeCafes = listaDeCafes;
+        this.redesSociales = new ArrayList<>();
+        this.listaDeCafes = new ArrayList<>();
     }
     public String getNombre() {
         return nombre;
@@ -47,6 +47,9 @@ public class Cafeteria {
     public void agregarCafe(Cafe cafe){
         this.listaDeCafes.add(cafe);
     }
+    public void agregarRedSocial(String redSocial){
+        this.redesSociales.add(redSocial);
+    }
     public void eliminarCafe(Cafe cafe){
         this.listaDeCafes.remove(cafe);
     }
@@ -57,5 +60,16 @@ public class Cafeteria {
             }
         }
         return null;
+    }
+    public String toString() {
+        String listaCafes = "";
+        for (Cafe cafe : this.listaDeCafes) {
+            listaCafes += cafe.toString() + "\n";
+        }
+
+        return "Cafeteria: " + this.nombre + "\n" +
+                "Direccion: " + this.direccion + "\n" +
+                "Redes sociales: " + this.redesSociales + "\n" +
+                "Cafes a la venta:\n" + listaCafes;
     }
 }
