@@ -7,7 +7,7 @@ Es una clase para poder crear objetos de tipo Cafe, los cuales simbolisan los ca
 - Mililitros de Agua: tipo double.
 - Tamaño: tipo String.
 
-**Metodos**:
+**Métodos**:
 - Cafe: es el constructor el cual inicializa los atributos de la clase segun lo que se le entregue como parametro.
 - Getters y Setters: para cada atributo le corresponde uno de estos para poder ver y modificar respectivamente el atributo.
 - toString: imprime por consola el nombre del objeto con sus atributos.
@@ -22,7 +22,7 @@ Es una clase para poder crear objetos de tipo Cafeteria, los cuales simbolisan l
 - Redes Sociales: tipo ArrayList<String>
 - Lista de Cafes: tipo ArrayList<Cafe>
 
-**Metodos**:
+**Métodos**:
 - Cafeteria: es el constructor el cual inicializa los atributos de la clase segun lo que se le entregue como parametro menos para los atributos redes sociales y lista de cafes, estos se inicialisan como ArrayList vacias. 
 - Getters y Setters: para cada atributo le corresponde uno de estos para poder ver y modificar respectivamente el atributo.
 - agregarCafe: se le entrega como parametro una variable de tipo Cafe y esta es agregada en el atributo de la cafeteria llamada listaDeCafes.
