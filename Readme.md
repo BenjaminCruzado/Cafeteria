@@ -30,7 +30,7 @@ Es una clase para poder crear objetos de tipo Cafeteria, los cuales simbolisan l
 - eliminarCafe: elimina el cafe que se indica en el parametro del metodo.
 - buscarCafePorTamaño: busca en la lista de cafes del atributo de la cafeteria uno por uno y compara el tamaño con el tamaño que se indica en el parametro de entrada y si encuentra uno de igual tamaño, este retorna el cafe.
 - toString: imprime por consola el nombre del objeto con sus atributos.
-- 
+
 ***Ejecucion del codigo:***
 -
 
